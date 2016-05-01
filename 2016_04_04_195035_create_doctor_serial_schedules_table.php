@@ -31,3 +31,30 @@ class CreateDoctorSerialSchedulesTable extends Migration
         Schema::drop('doctor_serial_schedules');
     }
 }
+
+
+
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	</head>
+	<body>
+	<div id="i">
+		<p>Country</p>
+	</div>
+	
+	<script>
+		$(function() {
+			var $a = $('#i');
+			$.ajax({
+			type: 'GET',
+			url:'a.html',
+			success: function(w){
+				//console.log('success', a);
+				$a.append(w)
+			}
+			});
+		});
+	</script>
+	</body>
+</html>	
